@@ -1,5 +1,4 @@
-
-
+//Arduino Code To Implement Robotic Arm 
 String readString;
 int x=90, y=90, z=90, p=90; 
 #include <Servo.h> 
