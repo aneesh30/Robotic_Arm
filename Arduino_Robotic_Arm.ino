@@ -1,12 +1,4 @@
-/*NOTE: Four Servos of the Robotic Arm are connected to 4 PWM Pins of Arduino 
-and these 4 servos are named a, b, c and d. 
 
-If you want to control servo a, then type "90a/", 
-where "90" is the PWM value (range is 0 - 255), 
-"a" means servo a and "/" is string parse delimiter. 
-
-Some other examples: 100a/ or 120b/ or 40c/ or 25d/
-*/
 
 String readString;
 int x=90, y=90, z=90, p=90; 
@@ -64,7 +56,7 @@ void loop()
             }
             x=temp;
          }
-//////////////////////////////////////////////////////////////////////////////         
+       
           if(readString.indexOf('b') >=0)
           {
             if (temp>y)
@@ -85,7 +77,6 @@ void loop()
               y=temp;
           }
          }
-///////////////////////////////////////////////////////////////////////
           if(readString.indexOf('c') >=0) //myservoc.write(n);
           {
             if (temp>z)
@@ -105,7 +96,6 @@ void loop()
               z=temp;
             }
          }
-/////////////////////////////////////////////////////
          if(readString.indexOf('d') >=0)
           {
             if (temp>p)
